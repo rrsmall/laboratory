@@ -1,0 +1,12 @@
+body {
+  font-family: georgia, sans-serif;
+  background-color: black;
+}
+
+.jumbotron {
+background-color: black;
+padding: 0px;
+}
+.navbar {
+  font-family: georgia, sans-serif;
+}
