@@ -3,6 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheet.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -29,34 +30,79 @@
           <li><a href="#interest">Areas of Interest</a></li>
           <li><a href="#current">Current Projects</a></li>
           <li><a href="#publications">Publications</a></li>
-      </ul>
-  </div>
-</nav>
+        </ul>
+      </div>
+    </nav>
 
-<div id="home">
-  </div>
-  s
-<div id ="people">
+    <div id="home">
+        <div id="home" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li data-target="#home" data-slide-to="0" class="active"></li>
+            <li data-target="#home" data-slide-to="1"></li>
+            <li data-target="#home" data-slide-to="2"></li>
+          </ul>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="scientists.png" alt="Computer Scientists" width="500" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="data.png" alt="Data Science" width="500" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="research.png" alt="Research Lab" width="500" height="500">
+            </div>
+        </div>
+
+    <a class="carousel-control-prev" href="#home" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#home" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+    </div>
   </div>
 
-<div id ="faculty">
-  <div class="container">
-    <img >
-  <!-- possible <ul>
-  </ul>-->
+    <div id ="people">
+      </div>
+
+    <div id ="faculty">
+      <div class="container">
+        <img >
+
+        <!-- possible <ul>
+          </ul>-->
+
     <h2>Faculty</h2>
-    <h4><strong>Dr. Christoforos Chritsoforou</strong></h3>
+    <h4><strong>Dr. Christoforos Christoforou</strong></h3>
     <h4><strong>Dr. Un Discovered</strong><h3>
   </div>
 
+      <div id = "interest">
+        </div>
 
-<div id = "interest">
-  </div>
+      <div id = "current">
+        </div>
 
-  <div id = "current">
-    </div>
+      <div id = "publications">
+        </div>
 
-    <div id = "publications">
+      <div class="container">
+        <div class="row">
+          <h3>Latest News</h3><br>
+          <div class="col-sm-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+          <div class="col-sm-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+          <div class="col-sm-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+        </div>
       </div>
 
   </body>
