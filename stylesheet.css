@@ -24,6 +24,8 @@
   text-align: center;
   overflow: hidden;
   position: relative;
+  width:150px;
+  height:240px;
 }
 
 .people .avatar {
