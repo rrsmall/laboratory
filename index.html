@@ -1,53 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-      <link rel="stylesheet" href="stylesheet.css"/>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+
   <body>
 
-  <div class="jumbotron text-center">
-      <h1>Laboratory Page<h1>
-    </div>
-    <nav class="navbar navbar-expand-sm justify-content-center">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="faculty.html">Faculty</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link 3</a>
-        </li>
-      </ul>
-    </nav>
+    <nav class="navbar navbar-expand-sm">
+      <div class="container">
+        <a class="navbar-brand" href=index.html>Research Lab</a>
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="people.html">People</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="interests.html">Area of Interest</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="projects.html">Curent Projects</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="publications.html">Publications</a>
+                  </li>
+              </ul>
+        </nav>
 
-    <div class="container mt-3">
+        <div class="container mt-3">
     <div id="myCarousel" class="carousel slide">
 
       <!-- Indicators -->
       <ul class="carousel-indicators">
-        <li class="item1 active"></li>
-        <li class="item2"></li>
-        <li class="item3"></li>
+        <li class="image1 active"></li>
+        <li class="image2"></li>
+        <li class="image3"></li>
       </ul>
 
       <!-- The slideshow -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="data.png" alt="Los Angeles" width="500" height="500">
+          <img src="images/scientists.png" alt="Computer Scientists" width="100%">
         </div>
         <div class="carousel-item">
-          <img src="research.png" alt="Chicago" width="500" height="500">
+          <img src="images/data.jpg" alt="Data" width="100%" >
         </div>
         <div class="carousel-item">
-          <img src="scientists.png" alt="New York" width="500" height="500">
+          <img src="images/research.png" alt="Research Lab" width="100%" >
         </div>
       </div>
 
@@ -67,13 +75,13 @@
       $("#myCarousel").carousel();
 
       // Enable Carousel Indicators
-      $(".item1").click(function(){
+      $(".image1").click(function(){
         $("#myCarousel").carousel(0);
       });
-      $(".item2").click(function(){
+      $(".image2").click(function(){
         $("#myCarousel").carousel(1);
       });
-      $(".item3").click(function(){
+      $(".image3").click(function(){
         $("#myCarousel").carousel(2);
       });
 
@@ -87,23 +95,65 @@
     });
     </script>
 
-    <div class="container">
-    <div class="row">
+    <div class="about">
+      <h3>What We Do</h3>
 
-        <h3>Latest News</h3><br>
-          <div class="col-sm-4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            <br>
-            <br>
-          </div>
-          <div class="col-sm-4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            <br>
-            <br>
-          </div>
-      </div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Card 1</h3>
+      <p>Some text</p>
+      <p>Some text</p>
     </div>
-</body>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Card 2</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Card 3</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Card 4</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+    <div class="container">
+      <div class="row">
+
+    <h3>Latest News</h3><br>
+      <div class="col-sm-4">
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <br>
+        <br>
+      </div>
+      <div class="col-sm-4">
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <br>
+        <br>
+      </div>
+  </div>
+</div>
+
+  </body>
 </html>

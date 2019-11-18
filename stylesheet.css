@@ -1,53 +1,105 @@
-body {
-  font-family: "Lucida Sans Typewriter";
-  background-color: white;
-}
-.card{
-  display: inline-block;
-}
-.title {
-  color: grey;
-  font-size: 18px;
-}
-
-.jumbotron {
-padding: 0px;
-background-color: white;
-}
-
 .navbar {
   font-family: "Lucida Sans Typewriter";
-  background-color: white;
-  font-size: 150%;
+  font-size: 110%;
 }
 
 .carousel-inner img {
-      width: 100%;
-      height: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
   }
 
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    cursor: pointer;
-    padding: 1px;
-  }
+.myCarousel {
+  width:1190px;
+  height:1080px;
+  margin-bottom: 0px;
+}
 
-.card-header{
-    font-family:"Lucida Sans Typewriter";
-  }
+.people {
+  font-family: "Lucida Sans Typewriter";
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
 
-.down {
-  padding-left: 3px;
-    transform: rotate(-135deg);
-      -webkit-transform: rotate(45deg);
-  }
-
-  arrow {
-    border: solid black;
-  border-width: 0 3px 3px 0;
+.people .avatar {
   display: inline-block;
-  padding: 3px;
+  height: 130px;
+  width: 130px;
+  margin-bottom:50px;
+  z-index: 1;
+  position: relative;
+}
+
+.about {
+  margin: 15px;
+  border: solid #f98b88;
+  padding: 20px;
+  text-align: center;
+}
+
+.about h3{
+  padding-top: 0px;
+}
+
+body {
+ font-family: "Lucida Sans Typewriter";
+ background-image: url("images/background.png");
+ background-size: cover;
+ background-repeat: no-repeat;
+ margin: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h3 {
+  text-align:center;
+  padding: 30px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  background-color: transparent;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: lightgray;
+   color: white;
+   text-align: center;
 }
