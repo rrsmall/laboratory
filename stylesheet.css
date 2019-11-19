@@ -38,8 +38,8 @@
 }
 
 .about {
-  margin: 15px;
-  border: solid #f98b88;
+  margin: 20px;
+  border: dotted #f98b88;
   padding: 20px;
   text-align: center;
 }
@@ -51,13 +51,15 @@
 body {
  font-family: "Lucida Sans Typewriter";
  background-image: url("images/background.png");
- background-size: cover;
  background-repeat: no-repeat;
  margin: 20px;
 }
 
 * {
   box-sizing: border-box;
+}
+h2{
+  text-align:center;
 }
 
 h3 {
@@ -69,6 +71,10 @@ h3 {
   float: left;
   width: 25%;
   padding: 0 10px;
+}
+
+.container-fluid {
+  margin-top: 30px;
 }
 
 .row {
